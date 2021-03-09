@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Yeseva+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poiret One', cursive;
+    overflow-x: hidden;
+    background: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+.l1{
+    position: absolute;
+    bottom: -50px;
+    width: 1920px;
+    left: 0;
+    z-index: 22;
+}
+
+.l2{
+    position: absolute;
+    width: 1920px;
+    bottom: -400px;
+    left: 0;
+    z-index: 21;
+}
+
+.l3{
+    position: absolute;
+    width: 1920px;
+    bottom: 100px;
+    left: 0;
+    z-index: 20;
+}
+
+.l4{
+    position: absolute;
+    width: 1920px;
+    bottom: 180px;
+    left: 0;
+    z-index: 19;
+}
+
+.l5{
+    position: absolute;
+    width: 1920px;
+    bottom: 450px;
+    left: 0;
+}
+  
+
+
+.big-title{
+    position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 5rem);
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 8rem;
+    font-weight: 600;
+    color: #fff;
+    z-index: 23;
+    text-shadow: 3px 3px #E58936 ;
+    }
+.type{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One';
+    color: #fff;
+    font-size: 4.5rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 65;
+}
+.type span{
+    color: #ff9500;
+}
+
+section{
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    z-index: 60;
+}
+
+section .container{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section img{
+    width: 450px;
+    border: 5px solid #E58936; 
+    border-radius: 50%; 
+}
+
+section .container > *{
+    margin: 3rem;
+}
+
+.content{
+    color: #fff;
+    transform: translateY(-50px);
+}
+
+.imgContainer{
+    transform: translateY(50px);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+    left: -14rem;
+    background: linear-gradient(to right,#E58C37, #E58C37,#E58C37,#E58C37, #F98B3C,#F98A3B,#FB9435,#FEA42A,#FEA42A,#fff ,#fff,#fff,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.text{
+    font-size: 2rem;
+    text-align: start;
+}
+
+.border{
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.opacity{
+    opacity: 0;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 2em;
+  left: 0;
+}
+section#project h1{
+    font-size: 6em;
+    text-decoration: underline;
+    padding-right: 1350px;
+    letter-spacing: 2px;
+}
+
+/* Section Images */
+section#project {
+  width:190%;
+  height: 120vh;
+  background-color:#FEA42A;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thevideo{
+    align-items: center;
+    border:5px solid #E58936;
+    border-radius: 10%;
+}
+
+section#contact {
+    height: 70vh;
+  background-color: #141313;
+  width: 100%;
+}
+
+section#contact h1{
+    font-size: 6em;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    transform:translateY(-150px) ;
+}
+
+.txt{
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #E58936;
+    transform:translateY(-120px) ;
+}
+
+.sm ul{
+    display: flex;
+  }
+.sm ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 80%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .sm ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 20%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+  }
+
+  .sm  ul li:nth-child(1):before{
+    background: #4267B2;
+  }
+  .sm  ul li:nth-child(2):before{
+    background: #ffffff;
+  }
+  .sm ul li:nth-child(3):before{
+    background: #E1306C;
+  }
+  .sm  ul li:nth-child(4):before{
+    background: #2867B2;
+  }
+  .sm  ul li:nth-child(5):before{
+    background: #ff0000;
+  }
+  .sm  ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+  }
+  .sm  ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #4267B2;
+  }
+  .sm ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #ffffff;
+  }
+  .sm ul li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+  }
+  .sm ul li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #2867B2;
+  }
+  .sm ul li:nth-child(5):hover:before{
+    box-shadow: 0 0 15px #ff0000;
+  } 
+  .sm ul li:nth-child(1):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+  }
+  .sm  ul li:nth-child(2):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+  }
+  .sm  ul li:nth-child(3):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+  }
+  .sm  ul li:nth-child(4):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #2867B2;
+    text-shadow: 0 0 15px #2867B2;
+  }
+  .sm ul li:nth-child(5):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+  } 
+
+
+
